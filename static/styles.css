@@ -1,0 +1,115 @@
+body{
+background: black;
+line-height: 1;
+text-align: center;
+
+}
+
+.row{
+	margin-top:0px;
+	padding: 50px 0px;
+	z-index:1;	
+}	
+
+h1{
+    font-family: 'Playfair Display', serif;
+    text-indent: -6px;
+ 	 color: white;
+ 	 font-size: 60px;
+ 	 padding: 3%;
+		
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #eaeaea;
+    letter-spacing: 1px;
+    
+}   
+
+.double-quote{
+	font-size: 250px;
+	margin-bottom: -160px; 
+	padding: 0px;
+}
+
+.authors
+{ 
+	 text-transform: uppercase;
+	 font-size: 22px;
+	 display: inline-block;
+}
+
+.sources{
+	font-style: italic;
+	font-size: 22px;
+}
+
+
+@media (max-width:1100px){
+.row{
+	padding: 60px 0px;
+	z-index:1;	
+}
+
+h1{
+    font-size: 50px;
+}
+.authors
+{ 
+	 font-size: 20px;
+}
+
+.sources{
+	font-size: 19px;
+}
+
+.double-quote{
+	font-size: 220px;
+	margin-bottom: -145px; 
+}
+}
+
+@media (max-width:800px){
+h1{
+    font-size: 40px;
+    padding-top: 15%;
+}
+.authors
+{ 
+	 font-size: 18px;
+}
+
+.sources{
+	font-size: 17px;
+}
+
+.double-quote{
+	font-size: 195px;
+	margin-bottom: -200px; 
+}
+}
+
+@media (max-width:500px){
+h1{
+    font-size: 36px;
+    padding-top: 23%;
+}
+.authors
+{ 
+	 font-size: 16px;
+}
+
+.sources{
+	font-size: 15px;
+}
+
+.double-quote{
+	font-size: 175px;
+}
+
+}
+
+
+
+		
