@@ -5,10 +5,19 @@ text-align: center;
 
 }
 
+.container{
+	min-height: 85vh; /* height of the browser viewport */
+   display: flex;
+   justify-content: center;
+   align-items: center;	
+
+}
+
+
 .row{
 	margin-top:0px;
 	padding: 50px 0px;
-	z-index:1;	
+	z-index:1;
 }	
 
 h1{
