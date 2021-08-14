@@ -1,6 +1,6 @@
 # Quotinspire
 
-_ **Link to website:** [https://josephmani.github.io/ConfrontingClimateChange/](https://josephmani.github.io/ConfrontingClimateChange/) _
+** Link to website: [https://josephmani.github.io/ConfrontingClimateChange/](https://josephmani.github.io/ConfrontingClimateChange/) **
 
 #### Tech Stack:
 Front-end: HTML,CSS (Bootstrap 4)
