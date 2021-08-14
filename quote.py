@@ -2,9 +2,28 @@ import requests
 import bs4
 import sys
 import psycopg2
+import sys
+import os
+import urllib.parse as up
+from os.path import join, dirname
+from dotenv import load_dotenv
+
+dotenv_path = join(os.path.dirname(os.path.realpath(__file__)), '.env')
+load_dotenv(dotenv_path)
+
+DATABASE_URL = os.environ.get("DATABASE_URL")
+
+up.uses_netloc.append("postgres")
+url = up.urlparse(DATABASE_URL)
+dbconn = psycopg2.connect(database=url.path[1:],
+user=url.username,
+password=url.password,
+host=url.hostname,
+port=url.port
+)
+
 
 def load_quotes():
-	dbconn = psycopg2.connect("dbname=quotes")
 	cursor = dbconn.cursor()
 	for i in range(1,100):
 		url= "https://www.goodreads.com/quotes/tag/inspirational?page="
@@ -37,7 +56,6 @@ def load_quotes():
 
 
 def create_db():
-	dbconn = psycopg2.connect("dbname=quotes")
 	cursor = dbconn.cursor()
 	f=open("words.sql")
 	sql_code= f.read()
@@ -57,3 +75,4 @@ def main(arg):
 
 if __name__=="__main__": #import guard
 	main(sys.argv[1])
+	 
