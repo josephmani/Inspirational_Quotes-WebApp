@@ -1,6 +1,6 @@
 # Quotinspire
 
-**Link to website:** [https://josephmani.github.io/ConfrontingClimateChange/](https://josephmani.github.io/ConfrontingClimateChange/)
+**Link to website:** [https://quotinspire.herokuapp.com/](https://quotinspire.herokuapp.com/)
 
 ### Tech stack used: 
   1) **Front-end:** HTML,CSS (Bootstrap 4)
